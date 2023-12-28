@@ -92,7 +92,7 @@ def build_model(model_name,
                 ckpt_path=None,
                 cache_dir=None,
                 return_cfg=False,
-                strict=True):
+                strict=False):
     if not model_name in PRETRAINED_MODELS:
         raise RuntimeError(
             f'Model name {model_name} is not a pre-trained model. Available models are:\n- ' + \
